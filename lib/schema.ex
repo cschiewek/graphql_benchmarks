@@ -16,6 +16,9 @@ defmodule Schema do
     end
   end
 
+  defp resolver(%{count: count}, _context) when count > @size do
+    {:error, "Count exceeds maximum"}
+  end
   defp resolver(%{count: count}, _context), do: {:ok, Enum.take(@data, count)}
   defp resolver(_arguments, _context), do: {:ok, @data}
 end

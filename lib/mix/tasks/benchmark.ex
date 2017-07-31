@@ -5,7 +5,7 @@ defmodule Mix.Tasks.Benchmark do
   def run(_) do
     {:ok, results} = """
     {
-      foos(count: 1) {
+      foos(count: 1001) {
         id
       }
     }
