@@ -5,7 +5,7 @@ defmodule Schema do
   use Absinthe.Schema
   import_types Types
 
-  @size 1000
+  @size 10000
   @data Enum.map(1..@size, fn(_) -> TestData.new end)
 
   query do

@@ -22,7 +22,8 @@ defmodule GraphqlBenchmarks.Mixfile do
   defp deps do
     [
      {:absinthe, "~> 1.3.2"},
-     {:uuid, "~> 1.1.7"}
+     {:uuid, "~> 1.1.7"},
+     {:benchee, "~> 0.9"}
     ]
   end
 end
