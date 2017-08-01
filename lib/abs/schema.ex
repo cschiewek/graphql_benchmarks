@@ -1,9 +1,9 @@
-defmodule Schema do
+defmodule Abs.Schema do
   @moduledoc """
   Based on https://gist.github.com/lovitt/effa205b876d9a9b86ee58399cceaf31#file-ruby_graphql_large_response_benchmark-rb-L117-L164
   """
   use Absinthe.Schema
-  import_types Types
+  import_types Abs.Types
 
   @size 10000
   @data Enum.map(1..@size, fn(_) -> TestData.new end)

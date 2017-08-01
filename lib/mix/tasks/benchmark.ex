@@ -56,5 +56,5 @@ defmodule Mix.Tasks.Benchmark do
     Benchee.run(functions, inputs: inputs)
   end
 
-  defp execute(query, count), do: Absinthe.run(query, Schema, variables: %{"count" => count})
+  defp execute(query, count), do: Absinthe.run(query, Abs.Schema, variables: %{"count" => count})
 end

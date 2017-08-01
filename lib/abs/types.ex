@@ -1,4 +1,4 @@
-defmodule Types do
+defmodule Abs.Types do
   @moduledoc """
   Based on https://gist.github.com/lovitt/effa205b876d9a9b86ee58399cceaf31#file-ruby_graphql_large_response_benchmark-rb-L71-L89
   """
